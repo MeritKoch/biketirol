@@ -70,5 +70,5 @@ let pulldown = document.querySelector("#pulldown");
 // console.log("Pulldown: ", pulldown);
 
 for (let etappe of ETAPPEN) {
-    pulldown.innerHTML += `<option value="${etappe.user}">${etappe.titel}</option>`;
+    pulldown.innerHTML += `<option value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>`;
 };
