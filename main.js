@@ -75,5 +75,14 @@ for (let etappe of ETAPPEN) {
         status = " selected ";
     }
     pulldown.innerHTML += `<option ${status} value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>`;
-
 };
+
+pulldown.onchange = function (evt) {
+    // console.log("Pulldown change event: ", evt);
+    // console.log("User: ", evt.target.value);
+    let username = evt.target.value;
+    let url = `https://${username}.github.io/biketirol`;
+    // console.log("Url: ", url);
+    // console.log(window.location);
+    window.location.href = url;
+}
