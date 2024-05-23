@@ -86,3 +86,4 @@ pulldown.onchange = function (evt) {
     // console.log(window.location);
     window.location.href = url;
 }
+
